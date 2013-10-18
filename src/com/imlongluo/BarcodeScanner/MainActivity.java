@@ -1,4 +1,4 @@
-package com.imlongluo.login;
+package com.imlongluo.BarcodeScanner;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.google.zxing.client.android.CaptureActivity;
+import com.google.zxing.client.android.HelpActivity;
 import com.google.zxing.client.android.R;
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -29,9 +30,16 @@ public class MainActivity extends Activity implements OnClickListener {
 			intent.setClass(MainActivity.this, ImageActivity.class);
 			MainActivity.this.startActivity(intent);
 			break;
+
+		case R.id.help:
+			intent.setClass(MainActivity.this, HelpActivity.class);
+			MainActivity.this.startActivity(intent);
+			break;
+
 		default:
 			break;
 		}
 	}
 
 }
+

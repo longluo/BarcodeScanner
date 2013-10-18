@@ -1,4 +1,5 @@
-package com.imlongluo.util;
+package com.imlongluo.BarcodeScanner.util;
+
 
 import java.io.FileNotFoundException;
 
@@ -10,7 +11,7 @@ import com.google.zxing.LuminanceSource;
 /**
  * This class is used to help decode images from files which arrive as RGB data
  * from Android bitmaps. It does not support cropping or rotation.
- * 
+ *
  * @author dswitkin@google.com (Daniel Switkin)
  */
 public final class RGBLuminanceSource extends LuminanceSource {
@@ -79,3 +80,4 @@ public final class RGBLuminanceSource extends LuminanceSource {
 		return bitmap;
 	}
 }
+
